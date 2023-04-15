@@ -10,6 +10,15 @@ using UnityEngine.Networking;
 /// </summary>
 public class APIRequestHandler : MonoBehaviour
 {
+    public static APIRequestHandler Instance { get; private set; }
+    private void Awake()
+    {
+        //Singleton definition
+        if(Instance != null)
+            Destroy(this.gameObject); 
+        else
+            Instance = this; DontDestroyOnLoad(this.gameObject);
+    }
 
     /// <summary>
     /// UnityWebRequest a una REST API para obtener o enviar datos
