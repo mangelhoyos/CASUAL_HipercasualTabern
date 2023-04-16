@@ -21,6 +21,8 @@ public class RequestDataSO : ScriptableObject
     [SerializeField] private HTTPVerbs HTTPVerb;
     [SerializeField] private int listeningPort;
 
+    [HideInInspector] public UserScoreSerialized userScoreToSend;
+ 
     /// <summary>
     /// Genera el URI basado en los datos del request
     /// </summary>

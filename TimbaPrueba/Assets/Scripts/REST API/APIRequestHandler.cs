@@ -1,6 +1,4 @@
 using Newtonsoft.Json;
-using System.Collections;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -50,9 +48,8 @@ public class APIRequestHandler : MonoBehaviour
                 break;
 
             case RequestDataSO.HTTPVerbs.POST:
-                UserScoreSerialized user = new UserScoreSerialized();
-                user.usuario = "Raul";
-                user.puntaje = 780;
+                UserScoreSerialized user = requestData.userScoreToSend;
+              
                 string jsonFileToSend = JsonConvert.SerializeObject(user);
                 using(UnityWebRequest request = UnityWebRequest.Put(requestData.GenerateURI(),jsonFileToSend))
                 {
@@ -67,6 +64,7 @@ public class APIRequestHandler : MonoBehaviour
                     if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
                     {
                         Debug.Log("Request error :: " + request.error);
+                        response = "ERROR";
                     }
                     else
                     {

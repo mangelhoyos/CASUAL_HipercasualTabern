@@ -42,6 +42,10 @@ public class ScoreTableHandler : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Con los usuarios recogidos crea una tabla llenando los elementos con los datos de usuarios en orden descendente
+    /// </summary>
+    /// <param name="scores"></param>
     private void GenerateTable(List<UserScoreSerialized> scores)
     {
         //Limpiar la tabla

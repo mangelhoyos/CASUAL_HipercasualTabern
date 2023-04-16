@@ -11,6 +11,9 @@ public class TableElement : MonoBehaviour
     [SerializeField] private TMP_Text username;
     [SerializeField] private TMP_Text points;
 
+    /// <summary>
+    /// Establece los datos del elemento en la tabla
+    /// </summary>
     public void SetTableElementData(string listNumber, string username, string points)
     {
         this.listNumber.text = listNumber;
