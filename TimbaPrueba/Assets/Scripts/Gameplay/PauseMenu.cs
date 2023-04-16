@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Clase que maneja el sistema de pausa en forma de toggle
+/// </summary>
 public class PauseMenu : MonoBehaviour
 {
     [Header("Pause")]
@@ -18,6 +21,9 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Al llamar esta función activa el pausa si estaba desactivado y si estaba activado lo desactiva
+    /// </summary>
     public void TogglePause()
     {
         AudioManager.instance.Play("ButtonClick");

@@ -9,5 +9,4 @@ public class PlateStation : MonoBehaviour
 {
     public Transform playerMovementPosition;
     public Transform shootPlatePosition;
-
 }

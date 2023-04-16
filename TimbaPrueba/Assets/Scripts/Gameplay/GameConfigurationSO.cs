@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/// <summary>
+/// La configuración principal del gameplay basado en un modelo data driven
+/// </summary>
 [CreateAssetMenu(fileName = "Game configuration profile", menuName = "Game data/Game Config")]
 public class GameConfigurationSO : ScriptableObject
 {

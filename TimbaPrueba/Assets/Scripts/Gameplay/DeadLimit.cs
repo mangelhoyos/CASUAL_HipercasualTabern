@@ -9,6 +9,9 @@ public class DeadLimit : MonoBehaviour
 
     private void Awake() => manager = FindObjectOfType<GameManager>();
 
+    /// <summary>
+    /// Cuando un plato entra a la zona significa GameOver
+    /// </summary>
     private void OnTriggerEnter2D(Collider2D collision)
     {
         string PLATETAG = "Plate";

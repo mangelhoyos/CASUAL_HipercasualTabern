@@ -136,9 +136,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9164303336846562072, guid: 6153000658e868d4b8cd6fe6886deaea, type: 3}
       propertyPath: m_text
-      value: Muevete entre estaciones y envia platos a los orcos antes de que se
-        les acabe la paciencia, asegurate de no enviar platos donde no haya nadie
-        o perderas. Buena suerte.
+      value: Muevete entre calderos y envia platos a los orcos antes de que se les
+        acabe la paciencia, asegurate de no enviar un plato a un espacio vacio o
+        perderas. Buena suerte.
       objectReference: {fileID: 0}
     - target: {fileID: 9164303336846562072, guid: 6153000658e868d4b8cd6fe6886deaea, type: 3}
       propertyPath: m_fontColor32.rgba
@@ -275,7 +275,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.11914584, y: 0.637}
   m_AnchorMax: {x: 0.11914584, y: 0.637}
-  m_AnchoredPosition: {x: 903, y: 222}
+  m_AnchoredPosition: {x: 1146, y: 222}
   m_SizeDelta: {x: 179.88, y: 179.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &116225765
@@ -618,6 +618,82 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &302762492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 302762493}
+  - component: {fileID: 302762495}
+  - component: {fileID: 302762494}
+  m_Layer: 5
+  m_Name: PlayerImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &302762493
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302762492}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2052058128}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -632, y: 233}
+  m_SizeDelta: {x: 826.36, y: 826.36}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &302762494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302762492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -6342241245146142518, guid: d90d7a221c51b3d47a20a1c27617d7c6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &302762495
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302762492}
+  m_CullTransparentMesh: 1
 --- !u!1 &337673775
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,7 +798,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.11914584, y: 0.637}
   m_AnchorMax: {x: 0.11914584, y: 0.637}
-  m_AnchoredPosition: {x: 903, y: 0}
+  m_AnchoredPosition: {x: 1146, y: 0}
   m_SizeDelta: {x: 179.88, y: 179.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &402184831
@@ -1770,7 +1846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796338127183009110, guid: dc5db579f5c61ff4d93adbe09422638a, type: 3}
       propertyPath: m_text
-      value: PLAY
+      value: JUGAR
       objectReference: {fileID: 0}
     - target: {fileID: 1796338127183009110, guid: dc5db579f5c61ff4d93adbe09422638a, type: 3}
       propertyPath: m_fontColor.b
@@ -2024,7 +2100,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9164303336846562072, guid: 6153000658e868d4b8cd6fe6886deaea, type: 3}
       propertyPath: m_text
-      value: CONNECTING TO DATABASE...
+      value: CONECTANDO A BASE DE DATOS...
       objectReference: {fileID: 0}
     - target: {fileID: 9164303336846562072, guid: 6153000658e868d4b8cd6fe6886deaea, type: 3}
       propertyPath: m_fontSize
@@ -2076,7 +2152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9184491404206204005, guid: 6153000658e868d4b8cd6fe6886deaea, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1086.54
+      value: 1378.51
       objectReference: {fileID: 0}
     - target: {fileID: 9184491404206204005, guid: 6153000658e868d4b8cd6fe6886deaea, type: 3}
       propertyPath: m_SizeDelta.y
@@ -2112,7 +2188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9184491404206204005, guid: 6153000658e868d4b8cd6fe6886deaea, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.0000019073
+      value: 27.8
       objectReference: {fileID: 0}
     - target: {fileID: 9184491404206204005, guid: 6153000658e868d4b8cd6fe6886deaea, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2462,7 +2538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9164303336846562072, guid: 6153000658e868d4b8cd6fe6886deaea, type: 3}
       propertyPath: m_text
-      value: LEADERBOARD
+      value: PUNTUACIONES
       objectReference: {fileID: 0}
     - target: {fileID: 9164303336846562072, guid: 6153000658e868d4b8cd6fe6886deaea, type: 3}
       propertyPath: m_fontSize
@@ -2611,7 +2687,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.11914584, y: 0.637}
   m_AnchorMax: {x: 0.11914584, y: 0.637}
-  m_AnchoredPosition: {x: 232, y: 0}
+  m_AnchoredPosition: {x: 475, y: 0}
   m_SizeDelta: {x: 179.88, y: 179.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1457166168
@@ -2665,7 +2741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796338127183009110, guid: dc5db579f5c61ff4d93adbe09422638a, type: 3}
       propertyPath: m_text
-      value: EXIT
+      value: SALIR
       objectReference: {fileID: 0}
     - target: {fileID: 1796338127183009110, guid: dc5db579f5c61ff4d93adbe09422638a, type: 3}
       propertyPath: m_fontColor.b
@@ -3350,7 +3426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9164303336846562072, guid: 6153000658e868d4b8cd6fe6886deaea, type: 3}
       propertyPath: m_text
-      value: PAUSE BUTTON
+      value: BOTON PAUSA
       objectReference: {fileID: 0}
     - target: {fileID: 9164303336846562072, guid: 6153000658e868d4b8cd6fe6886deaea, type: 3}
       propertyPath: m_fontColor32.rgba
@@ -3567,7 +3643,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796338127183009110, guid: dc5db579f5c61ff4d93adbe09422638a, type: 3}
       propertyPath: m_text
-      value: RETURN
+      value: VOLVER
       objectReference: {fileID: 0}
     - target: {fileID: 1796338127183009110, guid: dc5db579f5c61ff4d93adbe09422638a, type: 3}
       propertyPath: m_fontColor.b
@@ -3905,7 +3981,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796338127183009110, guid: dc5db579f5c61ff4d93adbe09422638a, type: 3}
       propertyPath: m_text
-      value: LEADERBOARD
+      value: PUNTUACIONES
       objectReference: {fileID: 0}
     - target: {fileID: 1796338127183009110, guid: dc5db579f5c61ff4d93adbe09422638a, type: 3}
       propertyPath: m_fontColor.b
@@ -4488,6 +4564,7 @@ RectTransform:
   - {fileID: 729578001}
   - {fileID: 794203265}
   - {fileID: 14157407}
+  - {fileID: 302762493}
   m_Father: {fileID: 494574309}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4532,7 +4609,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.11914584, y: 0.637}
   m_AnchorMax: {x: 0.11914584, y: 0.637}
-  m_AnchoredPosition: {x: 232, y: 222}
+  m_AnchoredPosition: {x: 474.99997, y: 222}
   m_SizeDelta: {x: 179.88, y: 179.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2112097256
@@ -4716,7 +4793,7 @@ PrefabInstance:
 
         HIPERCASUAL
 
-        TABERN'
+        TAVERN'
       objectReference: {fileID: 0}
     - target: {fileID: 9164303336846562072, guid: 6153000658e868d4b8cd6fe6886deaea, type: 3}
       propertyPath: m_fontSize

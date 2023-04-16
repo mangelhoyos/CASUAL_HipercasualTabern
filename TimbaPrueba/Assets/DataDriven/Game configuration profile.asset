@@ -15,8 +15,8 @@ MonoBehaviour:
   moveUpInput: 273
   moveDownInput: 274
   throwPlateInput: 275
-  throwPlateSpeed: 6
-  throwRateFire: 0.75
+  throwPlateSpeed: 8
+  throwRateFire: 0.5
   plateThrowPrefab: {fileID: 3050175276234853581, guid: 8c33284ef1e53d34c92c194644ff6846, type: 3}
   scoreValue: 20
   minNMaxSpawnRate: {x: 0.75, y: 3.5}

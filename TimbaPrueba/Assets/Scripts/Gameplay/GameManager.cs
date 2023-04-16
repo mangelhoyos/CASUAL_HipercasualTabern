@@ -98,6 +98,13 @@ public class GameManager : MonoBehaviour
 
         usernameInputPanel.SetActive(false);
         actualUser.usuario = usernameInput.text;
+        StartCoroutine(WaitForStartGame());
+    }
+
+    IEnumerator WaitForStartGame()
+    {
+        yield return new WaitForSecondsRealtime(2);
+        AudioManager.instance.Play("Start");
         Time.timeScale = 1;
     }
 
