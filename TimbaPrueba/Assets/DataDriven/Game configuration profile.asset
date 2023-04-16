@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cd41df03bc21b46a9aa63ff08876c2, type: 3}
+  m_Name: Game configuration profile
+  m_EditorClassIdentifier: 
+  moveUpInput: 273
+  moveDownInput: 274
+  throwPlateInput: 275
+  throwPlateSpeed: 6
+  throwRateFire: 0.75
+  plateThrowPrefab: {fileID: 3050175276234853581, guid: 8c33284ef1e53d34c92c194644ff6846, type: 3}
+  scoreValue: 20
+  minNMaxSpawnRate: {x: 0.75, y: 3.5}
+  maxOrcPatience: 3.5
+  orcIdleSatisfiedTime: 1
+  pauseButton: 27
